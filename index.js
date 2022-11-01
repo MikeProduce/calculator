@@ -1,6 +1,8 @@
-const buttons = document.getElementsByClassName("button");
-// console.log(buttons.innerHTML);
+const buttons = document.querySelectorAll("buttons").value;
+const buttons1 = document.querySelectorAll("hello");
 
-buttons.forEach((element) => {
-    console.log(element);
-});
+console.log(buttons1.innerHTML);
+
+// buttons.forEach((element) => {
+//     return console.log(element);
+// });
