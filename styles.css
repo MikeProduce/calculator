@@ -27,7 +27,7 @@ body {
     grid-row-start: 7;
     grid-row-end: 7;
 }
-.button {
+.buttons {
     min-width: 50px;
     background-color: black;
     color: white;
