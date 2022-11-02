@@ -1,6 +1,9 @@
 const buttons = document.getElementsByClassName("button");
-// console.log(buttons.innerHTML);
+const inputs = document.getElementsByClassName("input");
 
-buttons.forEach((element) => {
-    console.log(element);
-});
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", () => {
+        let inputchanges = inputs.value;
+        return (inputchanges = buttons[i].innerHTML);
+    });
+}
