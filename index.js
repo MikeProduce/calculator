@@ -17,11 +17,7 @@ for (let i = 0; i < buttons.length; i++) {
                 input.value = "";
             }
             if (input.value.includes("-") === true) {
-                let newValue = inputValue.slice(0, -1);
-                let currentValue = newValue * 1;
-                numbersSaved.push(currentValue);
-                input.value = numbersSaved[0] - newValue;
-                console.log(numbersSaved);
+                
             }
         }
     });
