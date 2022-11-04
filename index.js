@@ -2,6 +2,7 @@
 
 const buttons = document.querySelectorAll(".buttons");
 let input = document.querySelector(".input");
+const numbersSaved = [];
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", () => {
         let inputValue = (input.value += buttons[i].innerHTML);
@@ -18,9 +19,12 @@ for (let i = 0; i < buttons.length; i++) {
             if (input.value.includes("-") === true) {
                 let newValue = inputValue.slice(0, -1);
                 let currentValue = newValue * 1;
-                console.log(currentValue);
+                numbersSaved.push(currentValue);
+                input.value = numbersSaved[0] - newValue;
+                console.log(numbersSaved);
             }
         }
     });
 }
+
 // miguel you are trying to transfer a value to a different line and then get that line and multiply it or subtract ect by the new line
